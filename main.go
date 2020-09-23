@@ -33,9 +33,6 @@ type Participant struct {
 }
 
 func CreateParticipant(participant Participant, meeting Meeting) (error, string) {
-	if participant.Name == "" || participant.Email == "" || participant.RSVP == "" {
-		return errors.New("Fill All Details"), string(0)
-	}
 
 	var high Participant
 
